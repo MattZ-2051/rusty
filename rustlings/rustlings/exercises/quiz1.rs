@@ -13,10 +13,15 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
+
 
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(num_of_apples: u32) -> u32 {
+    let price_per_apple: u8 = if num_of_apples > 40 { 1 } else { 2 } ;
+
+    u32::from(price_per_apple) * num_of_apples
+
+}
 
 // Don't modify this function!
 #[test]
